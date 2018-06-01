@@ -45,6 +45,14 @@ private:
         поиск цепочек блоков для удаления,удаление блоков возвращает приращение счёта игрока.
      */
     int findBlockLines();
+    /*!
+      \brief check game out condition
+      \retval boolean false - continue game, true - end game
+      \note
+        проверка на невозможность собрать какую-нибудь линию
+     */
+    bool checkGameOut();
+
     QPair<int,int> setPair(int key, int value);
 
 };
